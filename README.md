@@ -1,6 +1,6 @@
 # Mankai Supabase
 
-This project manages the database schema for Mankai.
+This project manages the database schema for [mankai](https://github.com/nohackjustnoobb/mankai).
 
 ## Setup Instructions
 

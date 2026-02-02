@@ -1,0 +1,8 @@
+{
+  "name": "mankai-supabase",
+  "version": "1.0.0",
+  "license": "MIT",
+  "devDependencies": {
+    "supabase": "^2.74.5"
+  }
+}

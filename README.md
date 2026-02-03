@@ -38,7 +38,21 @@ To push the local migration files to the remote database:
 yarn supabase db push
 ```
 
-### 5. Configure Authentication
+### 5. Deploy Functions
+
+To deploy the edge functions to the remote project:
+
+```bash
+yarn supabase functions deploy
+```
+
+After deploying, set the `DB_CONNECTION_STRING` secret using the **transaction pooler connection string** (available from the **"Connect"** button in the Supabase Dashboard). Do not use the direct connection URL (`SUPABASE_DB_URL`), as it may cause connection errors.
+
+```bash
+yarn supabase secrets set DB_CONNECTION_STRING="your-transaction-pooler-connection-string"
+```
+
+### 6. Configure Authentication
 
 1.  Go to the Supabase Dashboard for your project.
 2.  Navigate to **Authentication** > **Providers**.

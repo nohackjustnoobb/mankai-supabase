@@ -23,6 +23,7 @@ alter table "public"."Record" enable row level security;
     "datetime" timestamp with time zone not null,
     "updates" boolean not null,
     "latestChapter" text not null,
+    "isDeleted" boolean not null default false,
     "updatedAt" timestamp with time zone not null default now()
       );
 

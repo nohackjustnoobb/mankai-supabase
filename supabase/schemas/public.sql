@@ -58,6 +58,7 @@ CREATE TABLE "Saved" (
     "datetime" timestamp WITH time zone NOT NULL,
     "updates" boolean NOT NULL,
     "latestChapter" text NOT NULL,
+    "isDeleted" boolean NOT NULL DEFAULT false,
     "updatedAt" timestamp WITH time zone NOT NULL DEFAULT NOW(),
     CONSTRAINT "Saved_pkey" PRIMARY KEY ("mangaId", "pluginId", "userId")
 );

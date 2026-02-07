@@ -4,7 +4,7 @@ CREATE TABLE "Record" (
     "pluginId" text NOT NULL,
     "userId" uuid NOT NULL REFERENCES auth.users(id) ON DELETE CASCADE ON UPDATE CASCADE,
     "datetime" timestamp WITH time zone NOT NULL,
-    "chapterId" text,
+    "chapterId" text NOT NULL,
     "chapterTitle" text,
     "page" integer NOT NULL,
     "updatedAt" timestamp WITH time zone NOT NULL DEFAULT NOW(),

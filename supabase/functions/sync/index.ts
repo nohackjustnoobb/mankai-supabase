@@ -57,7 +57,11 @@ Deno.serve(async (req) => {
         .filter(
           // deno-lint-ignore no-explicit-any
           (r: any) =>
-            r.mangaId && r.pluginId && r.datetime && r.page !== undefined,
+            r.mangaId &&
+            r.pluginId &&
+            r.datetime &&
+            r.chapterId &&
+            r.page !== undefined,
         )
         // deno-lint-ignore no-explicit-any
         .map((r: any) => ({

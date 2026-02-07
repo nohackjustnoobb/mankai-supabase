@@ -15,7 +15,7 @@ export const records = pgTable(
     pluginId: text("pluginId").notNull(),
     userId: uuid("userId").notNull(),
     datetime: timestamp("datetime", { withTimezone: true }).notNull(),
-    chapterId: text("chapterId"),
+    chapterId: text("chapterId").notNull(),
     chapterTitle: text("chapterTitle"),
     page: integer("page").notNull(),
     updatedAt: timestamp("updatedAt", { withTimezone: true }).notNull(),

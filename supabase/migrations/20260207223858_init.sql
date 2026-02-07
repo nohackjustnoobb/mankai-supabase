@@ -6,7 +6,7 @@ create extension if not exists "moddatetime" with schema "extensions";
     "pluginId" text not null,
     "userId" uuid not null,
     "datetime" timestamp with time zone not null,
-    "chapterId" text,
+    "chapterId" text not null,
     "chapterTitle" text,
     "page" integer not null,
     "updatedAt" timestamp with time zone not null default now()
